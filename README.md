@@ -13,7 +13,8 @@ Hex edit these locations either manually or with your compiler program to instea
 | Executable | Offset |
 |------------|--------|
 | armhf-linux-gnu.elf | 0x000B2569 |
-| x86_64-linux-gnu.elf | 0x0016A009 |
+| x86_64-apple-darwin19.6.0 | 0x00003E30 |
+| x86_64-pc-linux-gnu.elf | 0x0016A009 |
 
 ## Using The Invoker
 In order to use the invoker on the target system, first the necessary LLVM tools have to be installed (lli) with it being accessible by the system's PATH variable.
@@ -30,6 +31,9 @@ In progress...
 #### Debian Based
 `sudo apt-get install llvm`
 
+#### Mac OS
+Make sure homebrew is installed, then run `brew install llvm`.
+
 ### Editing The Executable
 This should be To use the invoker, first hex edit the `h`s at the address to instead be the name of the file followed by a null terminator. For the hello world script, change it to `HelloWorld.bc` followed by a null terminator. This should be done by the compiler for your language. I would also recommend renaming the executable to match your program name.
 
@@ -39,6 +43,9 @@ Once this is done, run the executable and it should run your .bc file as long as
 
 ## Compiling The Invoker
 The invoker can be compiled with the command `clang++ invoke.cpp -o OUTPUTNAME -static`. Make sure it is static so it can run on the target platform without problems! It could then be added to this github repo.
+
+### OSX Notes
+You can not compile the program statically in Mac OS, but this should hopefully not be an issue. Also note that you have to run the command `/usr/local/opt/llvm/bin/lli` instead of just `lli` due to how brew installs llvm.
 
 ## Preparing The Bitcode File
 In progress...
