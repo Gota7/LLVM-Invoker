@@ -52,5 +52,5 @@ You can not compile the program statically in Mac OS, but this should hopefully 
 In progress...
 
 ## Credits
-Program, Most Targets - Gota7
-arm64-apple-darwin20.3.0 - pitust
+* Program, Most Targets - Gota7
+* arm64-apple-darwin20.3.0 - pitust
