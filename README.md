@@ -12,6 +12,7 @@ Hex edit these locations either manually or with your compiler program to instea
 
 | Executable | Offset |
 |------------|--------|
+| arm64-apple-darwin20.3.0 | 0x00003E5F |
 | armhf-linux-gnu.elf | 0x000B2569 |
 | x86_64-apple-darwin19.6.0 | 0x00003E30 |
 | x86_64-pc-linux-gnu.elf | 0x0016A009 |
@@ -49,3 +50,7 @@ You can not compile the program statically in Mac OS, but this should hopefully 
 
 ## Preparing The Bitcode File
 In progress...
+
+## Credits
+Program, Most Targets - Gota7
+arm64-apple-darwin20.3.0 - pitust
