@@ -14,9 +14,9 @@ Hex edit these locations either manually or with your compiler program to instea
 |------------|--------|
 | arm64-apple-darwin20.3.0 | 0x00003E5F |
 | armhf-linux-gnu.elf | 0x000B2569 |
+| x64-pc-windows.exe | 0x00011F09 |
 | x86_64-apple-darwin19.6.0 | 0x00003E30 |
 | x86_64-pc-linux-gnu.elf | 0x0016A009 |
-| x86_64-pc-windows.exe | 0x00011F09 |
 
 
 ## Using The Invoker
@@ -27,7 +27,7 @@ These instructions are to be followed by the end user.
 
 #### Windows
 * First, install the Visual C++ Runtime from [here](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0).
-* Then, you need to install the LLVM Tools from [here](https://www.mediafire.com/file/gr6altnimd809j6/LLVMTools.zip/file).
+* Then, you need to install the LLVM Tools from [here (x64)](https://www.mediafire.com/file/gr6altnimd809j6/LLVMTools.zip/file).
 * Extract the ZIP file to a folder, and cut and paste the folder that has all the EXE files into your C:\ or main drive. The folder should be called `LLVMTools`.
 
 ![alt text](Windows_0.png "Hit Extract All when right clicking the ZIP.")
