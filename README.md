@@ -29,7 +29,10 @@ These instructions are to be followed by the end user.
 * First, install the Visual C++ Runtime from [here](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0).
 * Then, you need to install the LLVM Tools from [here](https://www.mediafire.com/file/gr6altnimd809j6/LLVMTools.zip/file).
 * Extract the ZIP file to a folder, and cut and paste the folder that has all the EXE files into your C:\ or main drive. The folder should be called `LLVMTools`.
-
+* Go to the start menu, and search and click *Edit the system environment variables*.
+* Hit *Environment Variables*.
+* Double click the *Path* variable under *System Variables*, and append `;C\LLVMTools` at the end or hit `New` and enter in `C:\LLVMTools` for Windows 10. Then hit OK for all the Windows.
+* You should be able to open a CMD and run `lli --help` anywhere.
 
 #### Arch Based
 `sudo pacman -S llvm`
